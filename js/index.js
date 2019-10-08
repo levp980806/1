@@ -19,6 +19,7 @@ var del =document.getElementById("delete");
 var mul =document.getElementById("multi");
 var div = document.getElementById("division");
 var res =document.getElementById("resta");
+var sin =document.getElementById("seno");
  
 var n1;
 var op;  
@@ -71,6 +72,15 @@ var op;
         op = resul.innerHTML;
         resul.innerHTML="";
     }
+
+    sin.onclick = function(){
+        n1 = resul.innerHTML; 
+        resul.innerHTML ="sen";
+        op = resul.innerHTML;
+        resul.innerHTML = Math.sin(parseFloat(n1));
+    }
+
+    
     igual.onclick = function(){
        switch(op){
             case "+":
@@ -82,6 +92,9 @@ var op;
             case "*": resul.innerHTML = parseFloat(n1)*parseFloat(resul.innerHTML);
             case "/":resul.innerHTML = parseFloat(n1)/parseFloat(resul.innerHTML);
             case "-":resul.innerHTML = parseFloat(n1)-parseFloat(resul.innerHTML);
+            case "sen":
+               resul.innerHTML = Math.pow(parseFloat(n1), parseFloat(resul.innerHTML)); 
+               break;
             
 
            
