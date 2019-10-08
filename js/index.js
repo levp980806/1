@@ -16,6 +16,7 @@ var raiz = document.getElementById("raiz");
 var pot = document.getElementById("potencia");
 var igual = document.getElementById("igual");
 var del =document.getElementById("delete");
+var mul =document.getElementById("multi");
  
 var n1;
 var op;  
@@ -75,7 +76,9 @@ var op;
                break;   
            case "^":
                resul.innerHTML = Math.pow(parseFloat(n1), parseFloat(resul.innerHTML)); 
-               break;  
+               break; 
+            case "*":
+                resul.innerHTML = parseFloat(n1)*parseFloat(resul.innerHTML); 
            
        }
     }
@@ -83,6 +86,13 @@ var op;
     del.onclick = function(){
      resul.innerHTML = document.clear();
      resul.innerHTML = "";
+    }
+
+    mul.onclick = function(){
+      n1=  resul.innerHTML;
+      resul.innerHTML ="*";
+      op = resul.innerHTML;
+      resul.innerHTML="";
     }
 
 
