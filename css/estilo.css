@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+form
+{
+    width: 100%;
+    max-width: 400px;
+    border: solid 1px lightslategray;
+    margin: auto;
+    background: lightsteelblue;
+    padding-bottom: 10px;
+}
+
+
+
+button
+{
+    background-color:darkgray;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    width: 40px;
+    padding: 16px 32px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 5px;
+
+}
+
+
+
+
+/*Clases*/
+
+    
+
+
+/*Identificadores */
+
+
+#borrar
+{
+    background-color:darkgray;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+    width: 40px;
+    padding: 16px 32px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 5px;
+
+}

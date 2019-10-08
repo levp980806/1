@@ -79,6 +79,31 @@ var op;
         op = resul.innerHTML;
         resul.innerHTML = Math.sin(parseFloat(n1));
     }
+    del.onclick = function(){
+        resul.innerHTML = document.clear();
+        resul.innerHTML = "";
+       }
+   
+       mul.onclick = function(){
+         n1=  resul.innerHTML;
+         resul.innerHTML ="x";
+         op = resul.innerHTML;
+         resul.innerHTML="";
+       }
+   
+       div.onclick = function(){
+           n1=  resul.innerHTML;
+           resul.innerHTML ="/";
+           op = resul.innerHTML;
+           resul.innerHTML="";
+         }
+       
+        res.onclick = function(){
+           n1=  resul.innerHTML;
+           resul.innerHTML ="-";
+           op = resul.innerHTML;
+           resul.innerHTML="";
+         }
 
     
     igual.onclick = function(){
@@ -89,43 +114,21 @@ var op;
             case "^":
                resul.innerHTML = Math.pow(parseFloat(n1), parseFloat(resul.innerHTML)); 
                break; 
-            case "*": resul.innerHTML = parseFloat(n1)*parseFloat(resul.innerHTML);
+            case "x": resul.innerHTML = parseFloat(n1)*parseFloat(resul.innerHTML);
+            break;
             case "/":resul.innerHTML = parseFloat(n1)/parseFloat(resul.innerHTML);
+            break;
             case "-":resul.innerHTML = parseFloat(n1)-parseFloat(resul.innerHTML);
-            case "sen":
-               resul.innerHTML = Math.pow(parseFloat(n1), parseFloat(resul.innerHTML)); 
-               break;
+            break;
+            case "sen": resul.innerHTML = Math.pow(parseFloat(n1), parseFloat(resul.innerHTML)); 
+            break;
             
 
            
        }
     }
 
-    del.onclick = function(){
-     resul.innerHTML = document.clear();
-     resul.innerHTML = "";
-    }
 
-    mul.onclick = function(){
-      n1=  resul.innerHTML;
-      resul.innerHTML ="*";
-      op = resul.innerHTML;
-      resul.innerHTML="";
-    }
-
-    div.onclick = function(){
-        n1=  resul.innerHTML;
-        resul.innerHTML ="/";
-        op = resul.innerHTML;
-        resul.innerHTML="";
-      }
-    
-     res.onclick = function(){
-        n1=  resul.innerHTML;
-        resul.innerHTML ="-";
-        op = resul.innerHTML;
-        resul.innerHTML="";
-      }
 
 
 
